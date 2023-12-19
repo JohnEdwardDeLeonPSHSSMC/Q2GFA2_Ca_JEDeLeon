@@ -47,15 +47,17 @@ body {
     background-width:300px;
     background-height:300px;
     animation-name:motion1;
-    animation-duration:infinite;
+    animation-duration:8s;
+    animation-iteration-count-:infinite;
 }
 
 #item2 {
     background-image:url(images/hb2.gif);
     background-width:300px;
     background-height:300px;
-    animation-name:motion;
-    animation-duration:infinite;
+    animation-name:enlarge;
+    animation-duration:200s;
+    animation-iteration-count-:infinite;
 }
 
 #item3 {
@@ -63,7 +65,8 @@ body {
     background-width:300px;
     background-height:300px;
     animation-name:motion2;
-    animation-duration:infinite;
+    animation-duration:4s;
+    animation-iteration-count-:infinite;
 }
 
 #item4 {
@@ -71,7 +74,8 @@ body {
     background-width:300px;
     background-height:300px;
     animation-name:enlarge;
-    animation-duration:infinite;
+    animation-duration:200s;
+    animation-iteration-count-:infinite;
 }
 
 @keyframes motion1 {
