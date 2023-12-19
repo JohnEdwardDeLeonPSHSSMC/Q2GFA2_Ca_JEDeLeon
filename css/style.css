@@ -49,6 +49,7 @@ body {
     animation-name:motion1;
     animation-duration:8s;
     animation-iteration-count-:infinite;
+    z-index:2;
 }
 
 #item2 {
@@ -58,6 +59,7 @@ body {
     animation-name:enlarge;
     animation-duration:200s;
     animation-iteration-count-:infinite;
+    z-index:2;
 }
 
 #item3 {
@@ -67,6 +69,7 @@ body {
     animation-name:motion2;
     animation-duration:4s;
     animation-iteration-count-:infinite;
+    z-index:2;
 }
 
 #item4 {
@@ -76,6 +79,7 @@ body {
     animation-name:enlarge;
     animation-duration:200s;
     animation-iteration-count-:infinite;
+    z-index:2;
 }
 
 @keyframes motion1 {
