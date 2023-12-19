@@ -18,3 +18,16 @@
 heading {
     font-family:'Montserrat';
 }
+
+.sky {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,25,1) 35%, rgba(6,13,38,1) 100%);
+}
+
+.celestial {
+    display:inline-block;
+    background:no-repeat;
+    background-position:center;
+    background-size:cover;
+    position:relative;
+    z-index:90;
+}
