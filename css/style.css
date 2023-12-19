@@ -41,3 +41,50 @@ heading {
 body {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,3,25,1) 35%, rgba(6,13,38,1) 100%);
 }
+
+#item1 {
+    background-image:url(images/hb1.gif);
+    background-width:300px;
+    background-height:300px;
+    animation-name:motion1;
+    animation-duration:infinite;
+}
+
+#item2 {
+    background-image:url(images/hb2.gif);
+    background-width:300px;
+    background-height:300px;
+    animation-name:motion;
+    animation-duration:infinite;
+}
+
+#item3 {
+    background-image:url(images/hb3.gif);
+    background-width:300px;
+    background-height:300px;
+    animation-name:motion2;
+    animation-duration:infinite;
+}
+
+#item4 {
+    background-image:url(images/hb4.gif);
+    background-width:300px;
+    background-height:300px;
+    animation-name:enlarge;
+    animation-duration:infinite;
+}
+
+@keyframes motion1 {
+    0%{transform:translate(1000px,-550px);}
+    100%{transform:translate(1000px,500px);}
+}
+
+@keyframes motion2 {
+    0%{transform:translate(1000px,550px);}
+    100%{transform:translate(1000px,-500px);}
+}
+
+@keyframes enlarge {
+    0%{transform:scale(0,0);}
+    100%{transform:scale(2,2);}
+}
