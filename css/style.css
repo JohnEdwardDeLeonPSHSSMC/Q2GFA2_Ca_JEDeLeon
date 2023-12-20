@@ -9,20 +9,22 @@
 html {
     scroll-padding:6vh;
     overflow-x:hidden;
+    overflow-y:hidden;
     scroll-behavior:smooth;
-}
-
-.banner {
-    background-color:black;
-    color:white;
-    opacity:75%;
-    height:5vh;
-    padding-left:4vh;
-    padding-top:1vh;
 }
 
 heading {
     font-family:'Montserrat';
+    color:white;
+    opacity:75%;
+    height:5vh;
+    width:100%;
+    padding-left:4vh;
+    padding-top:1.25vh;
+    display:inline-block;
+    z-index:100;
+    text-align:center;
+    font-size:larger;
 }
 
 .sky {
@@ -31,7 +33,7 @@ heading {
 
 .celestial {
     display:inline-block;
-    background:no-repeat;
+    background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
     position:relative;
@@ -43,52 +45,55 @@ body {
 }
 
 #item1 {
-    background-image:url(images/hb1.gif);
-    background-width:300px;
-    background-height:300px;
+    background-image:url(../images/hb1.gif);
+    width:300px;
+    height:300px;
     animation-name:motion1;
-    animation-duration:8s;
-    animation-iteration-count-:infinite;
+    animation-duration:12s;
+    animation-iteration-count:infinite;
 }
 
 #item2 {
-    background-image:url(images/hb2.gif);
-    background-width:300px;
-    background-height:300px;
-    animation-name:enlarge;
-    animation-duration:200s;
-    animation-iteration-count-:infinite;
+    background-image:url(../images/hb2.gif);
+    animation-name:motion2;
+    animation-duration:12s;
+    animation-iteration-count:infinite;
+    padding-left:200px;
+    padding-top:500px;
+    width:50px;
+    height:50px;
+    
 }
 
 #item3 {
-    background-image:url(images/hb3.gif);
-    background-width:300px;
-    background-height:300px;
-    animation-name:motion2;
-    animation-duration:4s;
-    animation-iteration-count-:infinite;
+    background-image:url(../images/hb3.gif);
+    width:300px;
+    height:300px;
+    animation-name:enlarge;
+    animation-duration:200s;
+    animation-iteration-count:1;
 }
 
 #item4 {
-    background-image:url(images/hb4.gif);
-    background-width:300px;
-    background-height:300px;
+    background-image:url(../images/hb4.gif);
     animation-name:enlarge;
     animation-duration:200s;
-    animation-iteration-count-:infinite;
+    animation-iteration-count:1;
+    padding-left:400px;
+    padding-top:200px;
 }
 
 @keyframes motion1 {
-    0%{transform:translate(1000px,-550px);}
-    100%{transform:translate(1000px,500px);}
+    0%{transform:translate(-1000px,-1000px);}
+    100%{transform:translate(1000px,1000px);}
 }
 
 @keyframes motion2 {
-    0%{transform:translate(1000px,550px);}
-    100%{transform:translate(1000px,-500px);}
+    0%{transform:translate(200px,1000px);}
+    100%{transform:translate(-600px,-1000px);}
 }
 
 @keyframes enlarge {
     0%{transform:scale(0,0);}
-    100%{transform:scale(2,2);}
+    100%{transform:scale(0.5,0.5);}
 }
